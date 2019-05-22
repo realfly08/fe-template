@@ -24,14 +24,14 @@
     {{#if isIview}}
     "iview": "3.4.1", 
     {{/if}}
-    {{#if stor}}
+    {{#if !stor}}
     "stor": "false",
     {{/if}}
     {{#if stor}}
     "stor": "true",
     "storConfig": {
-      "host": this.config.storConfig.host,
-      "port": storConfig.port
+      "host": "{{host}}",
+      "port": "{{port}}"
   },
     {{/if}}
     "vue": "2.5.10",
