@@ -25,7 +25,14 @@
     "iview": "3.4.1", 
     {{/if}}
     {{#if stor}}
-    "stor": "1",
+    "stor": "false",
+    {{/if}}
+    {{#if stor}}
+    "stor": "true",
+    "storConfig": {
+      "host": this.config.storConfig.host,
+      "port": storConfig.port
+  },
     {{/if}}
     "vue": "2.5.10",
     "vue-router": "3.0.1",
