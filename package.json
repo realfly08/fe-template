@@ -24,7 +24,7 @@
     {{#if isIview}}
     "iview": "3.4.1", 
     {{/if}}
-    {{#if !stor}}
+    {{#if stor == 0}}
     "stor": "false",
     {{/if}}
     {{#if stor}}
