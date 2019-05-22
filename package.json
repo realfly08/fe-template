@@ -27,13 +27,13 @@
     {{#if stor}}
     "stor": "true",
     "storConfig": {
-      ""host": "{{storConfig.host}}",
+      "host": "{{storConfig.host}}",
       "port": "{{storConfig.port}}",
       "protocol": "{{storConfig.protocol}}",
       "access_key_id": "{{storConfig.access_key_id}}",
       "secret_access_key": "{{storConfig.secret_access_key}}",
       "bucket": "{{storConfig.bucket}}",
-      "zone": "{{storConfig.zone}}""
+      "zone": "{{storConfig.zone}}"
   },
     {{/if}}
     {{#if openapi}}
