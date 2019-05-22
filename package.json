@@ -24,6 +24,9 @@
     {{#if isIview}}
     "iview": "3.4.1", 
     {{/if}}
+    {{#if stor}}
+    "stor": "1",
+    {{/if}}
     "vue": "2.5.10",
     "vue-router": "3.0.1",
     "vuex": "3.0.1"
