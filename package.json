@@ -27,7 +27,7 @@
     {{#if stor}}
     "stor": "true",
     "storConfig": {
-      "host": "{{host}}",
+      "host": "{{storConfig.host}}",
       "port": "{{port}}"
   },
     {{/if}}
