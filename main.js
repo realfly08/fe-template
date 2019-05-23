@@ -35,13 +35,9 @@ window.$QStor.storConfig = {
    bucket: {{storConfig.bucket}},
    zone: {{storConfig.zone}}
 }
-{{else}}
-  const stor = false
 {{/if}}
 {{#if openapi}}
 const openAPI = true
-{{else}}
-const openAPI = false
 {{/if}}
 {{#if editor}}
 const editor = true
