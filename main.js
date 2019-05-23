@@ -1,8 +1,6 @@
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
-import ElementUI from 'element-ui'
-import '@/assets/theme/index.css'
 import '@/styles/index.scss' // global css
 import App from './App'
 import router from './router'
@@ -17,10 +15,29 @@ import { getParams } from '@/api/openapi'
 // 非openapi调用
 import request from '@/utils/request'
 import API from '@/api/api'
+{{#if isElement}}
+import ElementUI from 'element-ui'
+import '@/assets/theme/index.css'
+{{/if}}
 {{#if stor}}
 // 青云oss
 import $QStor from '@/utils/QingStor'
 window.$QStor = $QStor
+window.$QStor.storConfig = {
+   host: {{storConfig.host}},
+   port: {{storConfig.port}},
+   protocol: {{storConfig.protocol}},
+   access_key_id: {{storConfig.access_key_id}},
+   secret_access_key: {{storConfig.secret_access_key}},
+   bucket: {{storConfig.bucket}},
+   zone: {{storConfig.zone}}
+}
+{{/if}}
+{{#if openapi}}
+const openAPI = true
+{{/if}}
+{{#if editor}}
+const editor = true
 {{/if}}
 import './filters'
 import './mixins'
