@@ -38,7 +38,7 @@ window.$QStor.storConfig = {
 {{else}}
   const stor = false
 {{/if}}
-{{#if openapi == '0'}}
+{{#if openapi}}
 const openAPI = true
 {{else}}
 const openAPI = false
