@@ -34,7 +34,9 @@ window.$QStor.storConfig = {
 }
 {{/if}}
 {{#if openapi}}
-const openAPI = true
+<div>const openAPI = true</div>
+{{else}}
+<div>const openAPI = false</div>
 {{/if}}
 {{#if editor}}
 const editor = true
