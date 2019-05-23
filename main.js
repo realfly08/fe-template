@@ -36,7 +36,7 @@ window.$QStor.storConfig = {
    zone: {{storConfig.zone}}
 }
 {{/if}}
-{{#if openapi}}
+{{#if (openapi === "1")}}
 const openAPI = true
 {{else}}
 const openAPI = false
