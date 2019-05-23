@@ -19,7 +19,7 @@ import API from '@/api/api'
 import ElementUI from 'element-ui'
 import '@/assets/theme/index.css'
 {{/if}}
-{{#if multiabcdef}}
+{{#if multi}}
 const multi = true
 {{/if}}
 {{#if stor}}
