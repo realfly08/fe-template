@@ -36,7 +36,7 @@
       "zone": "{{storConfig.zone}}"
   },
     {{/if}}
-    {{#if openapi}}
+    {{#if (openapi === "1")}}
     "openAPI": "true", 
     {{/if}}
     {{#if editor}}
